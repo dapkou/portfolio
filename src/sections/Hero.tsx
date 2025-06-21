@@ -1,3 +1,7 @@
+const scrollToProjects = () => {
+  document.getElementById('projects')
+          ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 const Hero = () => (
   <section
     id="hero"
@@ -8,7 +12,7 @@ const Hero = () => (
 
     {/* 中層：置中的霓虹圈圈 (z-10) */}
     <div className="absolute inset-0 pointer-events-none z-10 flex items-center justify-center">
-      <div className="w-70 h-70 bg-[#AF5F3C]/50 rounded-full blur-2xl opacity-60 animate-ping" />
+      <div className="w-70 h-70 bg-[#AF5F3C]/80 rounded-full blur-2xl opacity-30 animate-pulse" />
     </div>
 
     {/* 最上：主要內容 (z-20) */}
@@ -20,9 +24,9 @@ const Hero = () => (
         A Front-End Developer crafting clean UIs and robust web applications.<br />
         致力於開發美觀、穩健的網頁應用程式的前端開發者
       </p>
-      {/* 玻璃按鈕 */}
-      <a
-        href="#projects"
+
+      <a 
+        onClick={scrollToProjects}
         className="relative inline-block mt-10 px-10 py-3 font-semibold text-[#aaa263] rounded-full
                    overflow-hidden transition-all duration-300
                    hover:shadow-[0_0_10px_rgba(255,255,255,0.25)]
