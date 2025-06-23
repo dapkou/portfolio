@@ -52,5 +52,5 @@ export default tseslint.config({
   },
 })
 ```
-# portfolio2025
-# portfolio2025
+# portfolio
+# portfolio
