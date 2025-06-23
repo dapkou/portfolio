@@ -4,6 +4,6 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/runaPortfolio2025/',
+  base: '/portfolio2025/',
   plugins: [react(), tailwindcss()],
 });

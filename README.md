@@ -52,5 +52,5 @@ export default tseslint.config({
   },
 })
 ```
-# runaPortfolio2025
-# runaPortfolio2025
+# portfolio2025
+# portfolio2025
