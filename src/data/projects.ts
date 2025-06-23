@@ -1,66 +1,82 @@
-import { ta } from "zod/v4/locales";
-
 export const projects = [
     {
-        title: "YT Vault 影片摘要",
-        description: "本專案提供將 YouTube 影片內容透過 Gemini API 進行 AI 摘要分析，獲取影片的摘要、分類、關鍵字等資訊。",
-        descriptionEn: "This project uses the Gemini API to analyze YouTube video content with AI, generating summaries, categories, keywords, and other metadata.",
+        title: "YT Vault x Gemini AI 影片摘要",
+        titleEn: "YT Vault x Gemini AI Video Summarization",
+        description: "本專案提供將 YouTube 影片內容透過 Gemini API 進行 AI 摘要分析，獲取影片的摘要、分類、關鍵字等資訊。（目前僅支援本機端執行）",
+        descriptionEn: "This project uses the Gemini API to analyze YouTube video content with AI, generating summaries, categories, keywords, and other metadata. （this project currently runs only in a local development environment）",
         tags: ["React", "Next.js", "YouTube API", "Gemini API", "TypeScript", "Tailwind CSS"],
-        link: "#",
+        link: "https://github.com/dapkou/yt-vault",
         category: "side",
+        images: [
+            `${import.meta.env.BASE_URL}imgs/yt-vault-1.png`,
+            `${import.meta.env.BASE_URL}imgs/yt-vault-2.png`,
+            `${import.meta.env.BASE_URL}imgs/yt-vault-3.png`,
+            `${import.meta.env.BASE_URL}imgs/yt-vault-4.png`,
+        ],
+        video: `${import.meta.env.BASE_URL}video/yt-vault-demo.mp4`,
     },
     {
         title: "承鋒鑄造",
         titleEn: "CHENG FENG CASTING FACTORY",
-        description: "負責品牌形象網站的整體視覺設計、響應式切版與互動效果開發，結合品牌識別與使用者體驗，打造具吸引力的網站介面。",
-        descriptionEn: "Handled the full visual design, responsive layout, and interactive development of the brand's corporate website—aligning brand identity with user experience to create an engaging interface.",
+        description: "負責品牌形象網站的整體視覺設計、響應式切版與前端開發，融合品牌識別與使用者體驗，打造吸引人的網站介面。",
+        descriptionEn: "Led visual design, responsive layout, and front-end development for a brand website—blending brand identity with user experience to deliver an engaging interface.",
         tags: [
+        "前端開發",
         "ASP.NET Core 9",
         "MVC",
-        "i18n",
+        "i18n（多語系）",
         "Web UI/UX",
-        "響應式設計",
-        "前端互動開發"
+        "RWD 響應式",
+        "網頁 UI/UX"
         ],
         tagsEn: [
+        "Front-end Development",
         "ASP.NET Core 9",
         "MVC",
-        "i18n",
+        "Multilingual Support (i18n)",
         "Web UI/UX",
-        "Responsive Design",
-        "Interactive Front-end"
+        "Responsive Design (RWD)",
+        "Front-end development"
         ],
         link: "https://www.chengfeng.com.tw/",
         category: "custom",
+        images: [`${import.meta.env.BASE_URL}imgs/dev-1.png`],
     },
     {
         title: "台灣鑄造學會(待更新)",
         titleEn: "Taiwan Foundry Society(Coming Soon)",
-        description: "負責網站的響應式切版與前端互動開發，並整合購物車、結帳流程與會員系統，強化整體使用體驗。",
-        descriptionEn: "Developed responsive layouts and interactive front-end features, integrating shopping cart, checkout flow, and membership system to enhance user experience.",
+        description: "負責響應式網頁切版與前端開發，整合購物車、結帳流程與會員系統，優化整體用戶體驗。",
+        descriptionEn: "Implemented responsive layouts and front-end development, integrating cart, checkout, and membership features to optimize user experience.",
         tags: [
+        "前端開發",
         "ASP.NET Core 8",
         "MVC",
-        "i18n",
+        "i18n（多語系）",
         "購物車與結帳流程",
-        "會員功能"
+        "會員系統",
+        "RWD 響應式",
+        "網頁 UI/UX"
         ],
         tagsEn: [
+        "Front-end Development",
         "ASP.NET Core 8",
         "MVC",
-        "i18n",
+        "Multilingual Support (i18n)",
         "Cart & Checkout Flow",
-        "Membership System"        
+        "Membership System",
+        "Responsive Design (RWD)",
+        "Web UI/UX"
         ],
         link: "",
         category: "custom",
+        images: [`${import.meta.env.BASE_URL}imgs/dev-2.png`],
     },
     {
         title: "升學考試網站設計稿",
         titleEn: "Entrance Exam Website – Design Mockup",
         description: "針對升學考試品牌規劃官網視覺風格，設計響應式介面，提供清晰的資訊架構與視覺層次。",
         descriptionEn: "Designed a responsive mockup for an entrance exam brand website, emphasizing clear information architecture and visual hierarchy.",
-        tags: ["Web UI/UX", "Design Mockup", "Adobe XD", "Responsive Design"],
+        tags: ["Web UI/UX", "Design Mockup", "Adobe XD", "Responsive Design", "UI Kit"],
         link: "",
         category: "design",
         images: [
@@ -81,7 +97,7 @@ export const projects = [
         titleEn: "Academic Institution Website – Design Mockup",
         description: "規劃學術機構品牌官網的視覺風格，設計簡潔且具延展性的 UI 版型，以利後續開發整合。",
         descriptionEn: "Created a clean, scalable UI mockup for an academic institution’s website to support future integration and development.",
-        tags: ["Web UI/UX", "Design Mockup", "Figma", "Responsive Design"],
+        tags: ["Web UI/UX", "Design Mockup", "Adobe XD", "Responsive Design", "UI Kit"],
         link: "",
         category: "design",
         images: [
@@ -91,6 +107,22 @@ export const projects = [
         `${import.meta.env.BASE_URL}imgs/ui-3-mobile-1.png`,
         `${import.meta.env.BASE_URL}imgs/ui-3-mobile-2.png`,
         `${import.meta.env.BASE_URL}imgs/ui-3-mobile-3.png`,
+        ]
+    },
+    {
+        title: "企業形象網站設計稿",
+        titleEn: "Corporate Website – Design Mockup",
+        description: "為企業規劃專業且一致的網站視覺風格，設計具延展性與易於開發整合的 UI 版型。",
+        descriptionEn: "Designed a professional and cohesive visual style for a corporate website, with a scalable UI layout optimized for future development and integration.",
+        tags: ["Web UI/UX", "Design Mockup", "Figma", "Responsive Design", "Components"],
+        link: "",
+        category: "design",
+        images: [
+        `${import.meta.env.BASE_URL}imgs/ui-c-1.png`,
+        `${import.meta.env.BASE_URL}imgs/ui-c-2.png`,
+        `${import.meta.env.BASE_URL}imgs/ui-c-3.png`,
+        `${import.meta.env.BASE_URL}imgs/ui-c-4.png`,
+        `${import.meta.env.BASE_URL}imgs/ui-c-5.png`,
         ]
     },
     {
