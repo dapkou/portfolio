@@ -1,9 +1,14 @@
-const scrollToProjects = () => {
-  document.getElementById('projects')
-          ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-};
-const Hero = () => (
-  <section
+import { useLocale } from "../contexts/LocaleContext";
+
+const Hero: React.FC = () => {
+  const { t } = useLocale();
+  const scrollToProjects = () => {
+    document.getElementById('projects')
+            ?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  return(
+    <section
     id="hero"
     className="relative min-h-screen flex flex-col items-center justify-center text-center px-4 overflow-hidden"
   >
@@ -17,14 +22,8 @@ const Hero = () => (
 
     {/* 最上：主要內容 (z-20) */}
     <div className="relative z-20 text-white max-w-2xl">
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight mb-4">
-        Hi, I'm&nbsp;Runa.
-      </h1>
-      <p className="text-base sm:text-lg md:text-xl text-gray-200 leading-relaxed">
-        A Front-End Developer crafting clean UIs and robust web applications.<br />
-        致力於開發美觀、穩健的網頁應用程式的前端開發者
-      </p>
-
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">{t.heroTitle}</h1>
+      <p className="text-base sm:text-lg md:text-xl text-gray-200">{t.heroDescription}</p>
       <a 
         onClick={scrollToProjects}
         className="relative inline-block mt-10 px-10 py-3 font-semibold text-[#aaa263] rounded-full
@@ -40,6 +39,7 @@ const Hero = () => (
       </a>
     </div>
   </section>
-);
+  )
+};
 
 export default Hero;
