@@ -10,8 +10,8 @@ const scrollTo = (id: string) => {
 };
 
 const FixedNav = () => {
-  const { locale, setLocale, t } = useLocale();
-  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const { locale, setLocale } = useLocale();
+  const [lightboxOpen] = useState(false);
   return (
     <>
       {/* ─── 左上 Logo ─────────────────────────── */}
