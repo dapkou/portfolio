@@ -67,7 +67,7 @@ export const projects = [
         "Responsive Design (RWD)",
         "Web UI/UX"
         ],
-        link: "",
+        link: "https://www.foundry.org.tw/",
         category: "custom",
         images: [`${import.meta.env.BASE_URL}imgs/dev-2.png`],
     },
