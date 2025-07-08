@@ -44,7 +44,7 @@ export const projects = [
     },
     {
         title: "台灣鑄造學會",
-        titleEn: "Taiwan Foundry Society(Coming Soon)",
+        titleEn: "Taiwan Foundry Society",
         description: "負責響應式網頁切版與前端開發，整合購物車、結帳流程與會員系統，優化整體用戶體驗。",
         descriptionEn: "Implemented responsive layouts and front-end development, integrating cart, checkout, and membership features to optimize user experience.",
         tags: [
