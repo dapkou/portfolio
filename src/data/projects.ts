@@ -43,7 +43,7 @@ export const projects = [
         images: [`${import.meta.env.BASE_URL}imgs/dev-1.png`],
     },
     {
-        title: "台灣鑄造學會(待更新)",
+        title: "台灣鑄造學會",
         titleEn: "Taiwan Foundry Society(Coming Soon)",
         description: "負責響應式網頁切版與前端開發，整合購物車、結帳流程與會員系統，優化整體用戶體驗。",
         descriptionEn: "Implemented responsive layouts and front-end development, integrating cart, checkout, and membership features to optimize user experience.",
